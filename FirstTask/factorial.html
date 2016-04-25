@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+
+Factorial:<input id="x" value="4"/><br><br>
+<button onclick="myFunction()">Calculate Factorial</button>
+<p id="demo"></p>
+ 
+<script>
+function myFunction()
+{
+var x = document.getElementById("x").value
+document.getElementById("demo").innerHTML="Factorial of " + x + " = " + factorial(x);
+}
+ 
+function factorial(num)
+{
+  if (num==0)
+  {return 1;}
+  else
+  {return num*factorial(num-1);}
+}
+</script>
+ 
+</body>
+</html>
