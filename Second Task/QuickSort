@@ -7,8 +7,9 @@ function simple_quick_sort($arr)
     }
     else{
         $pivot = $arr[0];
-        $left = array();
+$left = array();
         $right = array();
+
         for($i = 1; $i < count($arr); $i++)
         {
             if($arr[$i] < $pivot){
